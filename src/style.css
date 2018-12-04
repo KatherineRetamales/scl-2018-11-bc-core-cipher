@@ -1,1 +1,57 @@
-/* Acá va tu código */
+body{
+  background-image: url(https://wallpapermemory.com/uploads/807/satellite-wallpaper-hd-1680x1050-47128.jpg);
+  color:#ffffff;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+#root{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+#left{
+  background-color: #3F51B5;
+  width: 420px;
+  height: 400px;
+  float: left;
+  border: 2px solid #B0BEC5;
+  padding:20px;
+  border-radius: 10px;
+  opacity: 0.7;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+#right{
+  background-color: #3F51B5 ;
+  width: 420px;
+  height: 400px;
+  float: right;
+  border: 2px solid #B0BEC5;
+  padding:20px;
+  border-radius: 10px;
+  opacity: 0.7;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+button{
+  width:120px;
+  height:30px;
+  background-color:#C0C0C0;
+  border-radius: 5px;
+  margin: 10px;
+  padding:0px;
+  color: #8B4513;
+  font-family: Georgia, "Times New Roman",Times, serif;
+  font-size:20px;
+}
+.texto{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #B0BEC5;
+    border-radius: 10px;
+}
+input {
+  width: 200px;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #B0BEC5;
+}

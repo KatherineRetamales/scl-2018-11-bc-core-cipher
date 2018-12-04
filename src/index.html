@@ -4,12 +4,33 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <div id="left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png" alt="" width="120" height="100">
+        <h1>Bienvenido(a) a Curiosity!</h1>
+        
+        <label><h3>Información</h3></label>
+        <p>El programa sirve para poder descifrar y cifrar los mensajes que se envían mediante frecuencias del espacio 
+        con el fin que al ser interceptado por personas no autorizadas no sepan el mensaje.</p>
+      </div>
+      
+        <div id="right">
+          <form  action="index.html" method="post" id="form">
+            <div><textarea class="texto" id="txtTexto" placeholder="Escriba el texto que quiere cifrar o descifrar"></textarea></div>
+            <div><input type="text" id="txtDesplazamiento" placeholder="Ingrese una clave de 1 a 4 digitos"></div>
+            <div>
+              <button id="btnCifrar">Cifrar</button>
+              <button id="btnDescifrar">Descifrar</button>
+            </div>
+            <div><textarea class="texto" id="txtdecode"></textarea></div>
+            <button id="btnReset">Borrar todo</button>
+            <button id="btnCopiar">Copiar</button>
+          </form>
+          
+        </div>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
