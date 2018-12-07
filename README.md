@@ -36,7 +36,7 @@ Se hicieron testeo con 6 personas en la cual se llego a la conclusión de que a 
 * Un botón donde al hacer click se despliegue un model donde salga la información de la aplicación y ademas salga las instrucciones de uso.
 ## Dom
 
-Para acceder a la aplicación web aquí  --> [ScretCode](http://127.0.0.1:5500/src/index.html) 
+Para acceder a la aplicación web aquí  --> [ScretCode](https://katherineretamales.github.io/scl-2018-11-bc-core-cipher/) 
 
 ### Pagina principal
 ![enter image description here](https://lh3.googleusercontent.com/8AqK_MIdEe0y8trbHviWpm_8ibowR3rmo2EfwliASSQZzYlEteOIdWFkCiVtwYkWpVyVwtKvNRBv "600")
