@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <div id="root">
-      <div id="left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png" alt="" width="120" height="100">
-        <h1>Bienvenido(a) a Curiosity!</h1>
-        
-        <label><h3>Información</h3></label>
-        <p>El programa sirve para poder descifrar y cifrar los mensajes que se envían mediante frecuencias del espacio 
-        con el fin que al ser interceptado por personas no autorizadas no sepan el mensaje.</p>
-      </div>
-      
-        <div id="right">
-          <form  action="index.html" method="post" id="form">
-            <div><textarea class="texto" id="txtTexto" placeholder="Escriba el texto que quiere cifrar o descifrar"></textarea></div>
-            <div><input type="text" id="txtDesplazamiento" placeholder="Ingrese una clave de 1 a 4 digitos"></div>
-            <div>
-              <button id="btnCifrar">Cifrar</button>
-              <button id="btnDescifrar">Descifrar</button>
-            </div>
-            <div><textarea class="texto" id="txtdecode"></textarea></div>
-            <button id="btnReset">Borrar todo</button>
-            <button id="btnCopiar">Copiar</button>
-          </form>
-          
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <a><img src="img/logo.png"
+        alt="" width="180" height="120"></a>
+    <a id="bienvenido">
+      <h1>Bienvenido(a) a SecretCode!</h1>
+    </a>
+    <div id="navbar-right">
+      <a><button type="button" data-toggle="modal" data-target="#exampleModal" class="btn">¿Cómo funciona?</button></a>
     </div>
-  </body>
+  </div>
+  <div id="left">
+    <form action="index.html" method="post" id="form">
+      <div><textarea class="texto" id="txtTexto" placeholder="Escriba el texto que quiere cifrar o descifrar" required></textarea></div>
+      <div><input type="number" id="txtDesplazamiento" placeholder="Ingrese el n° desplazamiento" required></div>
+      <div>
+        <button class="btn1" id="btnCifrar">Cifrar</button>
+        <button class="btn1" id="btnDescifrar">Descifrar</button>
+        <button class="btn1" id="btnReset">Borrar</button>
+      </div>
+      <div><textarea class="texto" id="txtdecode"></textarea></div>
+      <button class="btn1" id="btnCopiar">Copiar</button>
+    </form>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SecretCode</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>¿Qué es y para qué sirve?</h4>
+          <p>Es una aplicación web que sirve para poder cifrar o descifrar
+          los mensajes secretos entre agentes de seguridad o protegidos.</p>
+          <h4>¿Cómo se ocupa?</h4>
+          <p>1 - En el recuadro superior se ingresa el texto que se quiere cifrar o descifrar.</p>
+          <p>2 - Se ingresa el número de desplazamiento.</p>
+          <p>3 - Luego se pincha el botón cifrar o descifrar y en el recuadro de más abajo aparecerá el texto descifrado o cifrado según corresponda.</p> 
+          <p>4 - Se puede borrar y copiar el texto.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

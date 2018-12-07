@@ -1,57 +1,115 @@
-body{
-  background-image: url(https://wallpapermemory.com/uploads/807/satellite-wallpaper-hd-1680x1050-47128.jpg);
-  color:#ffffff;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+*{
+  margin : 0;
+  padding : 0;
 }
-#root{
-  width: 1000px;
-  display: flex;
-  justify-content: center;
+body{
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  margin: 0;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #16A085;
+  padding: 5px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #bienvenido {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#navbar-right {
+  float: right;
+}
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: #ffffff;
+}
+
+/* On mouse-over */
+.btn:hover {
+  background: #eee;
+  color: #000;
 }
 #left{
-  background-color: #3F51B5;
-  width: 420px;
-  height: 400px;
-  float: left;
-  border: 2px solid #B0BEC5;
-  padding:20px;
-  border-radius: 10px;
-  opacity: 0.7;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-#right{
-  background-color: #3F51B5 ;
-  width: 420px;
-  height: 400px;
-  float: right;
-  border: 2px solid #B0BEC5;
-  padding:20px;
-  border-radius: 10px;
-  opacity: 0.7;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-button{
-  width:120px;
-  height:30px;
-  background-color:#C0C0C0;
-  border-radius: 5px;
-  margin: 10px;
-  padding:0px;
-  color: #8B4513;
-  font-family: Georgia, "Times New Roman",Times, serif;
-  font-size:20px;
+  position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:461px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-200px;
+		/*determinamos una altura*/
+		height:400px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-150px;
+		border:1px  2px solid #B0BEC5;
+    padding:5px;
+    background-color: #16A085;
 }
 .texto{
-    width: 400px;
+    width: 450px;
     height: 100px;
     padding: 10px;
     outline: 0;
     border: 2px solid #B0BEC5;
-    border-radius: 10px;
 }
 input {
-  width: 200px;
+  width: 450px;
   padding: 10px;
   outline: 0;
   border: 2px solid #B0BEC5;
+}
+.btn1{
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: 1px solid #B0BEC5;
+  color: #16A085;
+  width:140px;
+  margin: 3px;
+}
+.btn1:hover{
+  background: #0E6655;
+  color: white;
+}
+.modal-header{
+  background-color: #16A085;
+  color: #ffffff;
 }
