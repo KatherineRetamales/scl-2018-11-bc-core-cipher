@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = () => { //espera a qu se cargue todo el HTML
   document.getElementById('btnCifrar').addEventListener('click',
   (evento)=>{
     evento.preventDefault();
@@ -14,9 +14,9 @@ window.onload = () => {
     let frase = document.getElementById('txtTexto').value;
     let desplazamiento = parseInt(document.getElementById('txtDesplazamiento').value);
     let fraseDescifrada = cipher.decode(frase,desplazamiento);
-    //.log(fraseDescifrada)
     document.getElementById('txtdecode').innerHTML=fraseDescifrada;
   })
+  //boton para eliminar el texto
   document.getElementById('btnReset').addEventListener('click',
   (evento)=>{
     evento.preventDefault();

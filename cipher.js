@@ -31,7 +31,7 @@ window.cipher = {
       }
       //condicion para numeros
       if (ascii >= 48 && ascii <= 57) {
-        offSetAscii = (ascii - 48 + desplazamiento) % 9 + 48;
+        offSetAscii = (ascii - 48 + desplazamiento) % 10 + 48;
       }
       newFrase += String.fromCharCode(offSetAscii);
     }

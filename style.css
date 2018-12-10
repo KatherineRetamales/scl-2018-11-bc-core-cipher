@@ -4,19 +4,19 @@
 }
 body{
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  margin: 0;
 }
 #navbar {
-  overflow: hidden;
   background-color: #16A085;
   padding: 5px;
-  transition: 0.4s;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
 }
-
+#navbar img{
+  width: 180px;
+  height: 120px;
+}
 #navbar a {
   float: left;
   color: #ffffff;
@@ -27,11 +27,9 @@ body{
   line-height: 25px;
   border-radius: 4px;
 }
-
 #navbar #bienvenido {
   font-size: 35px;
   font-weight: bold;
-  transition: 0.4s;
 }
 #navbar-right {
   float: right;
@@ -50,7 +48,8 @@ body{
   }
 }
 .btn {
-  border: none;
+  /* boton sin bordes */
+  border: none; 
   background-color: inherit;
   padding: 14px 28px;
   font-size: 16px;
@@ -66,8 +65,8 @@ body{
 }
 #left{
   position: absolute;
-		/*nos posicionamos en el centro del navegador*/
-		top:50%;
+    /*nos posicionamos en el centro del navegador*/
+    top: 50%;
 		left:50%;
 		/*determinamos una anchura*/
 		width:461px;
