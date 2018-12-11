@@ -1,4 +1,5 @@
 window.onload = () => {
+  //boton para cifrar
   document.getElementById('btnCifrar').addEventListener('click',
   (evento)=>{
     evento.preventDefault();
@@ -7,16 +8,16 @@ window.onload = () => {
     let fraseCifrada = cipher.encode(frase,desplazamiento);
     document.getElementById('txtdecode').innerHTML=fraseCifrada; // Se muetra en texto descifrado
   })
-
+  //boton para descifrar
   document.getElementById('btnDescifrar').addEventListener('click',
   (evento)=>{
     evento.preventDefault();
     let frase = document.getElementById('txtTexto').value;
     let desplazamiento = parseInt(document.getElementById('txtDesplazamiento').value);
     let fraseDescifrada = cipher.decode(frase,desplazamiento);
-    //.log(fraseDescifrada)
     document.getElementById('txtdecode').innerHTML=fraseDescifrada;
   })
+  //boton para borrar texto
   document.getElementById('btnReset').addEventListener('click',
   (evento)=>{
     evento.preventDefault();
